@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <header>
+        <h1>CST 8279 Students and Where They Are From</h1>
+    </header>
+
+    <nav>
+        <a href="{{ url_for( 'init' )}}">Homepage</a>
+        <a href="{{ url_for( 'findStudent' )}}">Find Student</a>
+        <a href="{{ url_for( 'displayAll' )}}" class="selected">Display All</a>
+    </nav>
+
+    <table id="table_id" class="display">
+        <thead>
+            <tr>
+                <th>Student<span>&#x25B2</span><span>&#x25BC</span></th>
+                <th>City<span>&#x25B2</span><span>&#x25BC</span></th>
+                <th>Country<span>&#x25B2</span><span>&#x25BC</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in studentsList %}
+            <tr>
+                <td><a href="{{ row[3] }}" target="_blank">{{ row[0] }}</a></td>
+                <td>{{ row[1] }}</td>
+                <td>{{ row[2] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

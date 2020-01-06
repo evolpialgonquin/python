@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <header>
+        <h1>CST 8279 Students and Where They Are From</h1>
+    </header>
+
+    <nav>
+        <a href="{{ url_for( 'init' )}}">Homepage</a>
+        <a href="{{ url_for( 'findStudent' )}}" class="selected">Find Student</a>
+        <a href="{{ url_for( 'displayAll' )}}">Display All</a>
+    </nav>
+
+    <div id="form">
+    <h2>Find a Student</h2>
+
+    <form action="{{ url_for( 'findStudent' )}}" method="POST">
+
+        {{ studentsForm.hidden_tag() }}
+        {{ studentsForm.formValue(id="menu1")}}
+
+    </form>
+    </div>
+
+{% endblock %}

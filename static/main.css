@@ -1,0 +1,117 @@
+*{
+    color: #162b53;
+}
+
+#container {
+    margin: auto;
+    max-width: 740px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*The BACKGROUND IMG was taken from <https://wallpaperaccess.com>*/
+header {
+    padding: 3rem;
+    text-align: center;
+    background: url("1355200.jpg");
+    background-size: 100%;
+}
+
+h1 {
+    color: #f5f5f5;
+    opacity: 1;
+}
+
+#form {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f5f5f5;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #dddddd;
+    /*padding: 1rem;*/
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 50px;
+}
+
+th span {
+    float: right;
+    font-size: 0.6rem;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+a {
+    text-decoration: none;
+}
+
+tr a:hover {
+    font-weight: bold;
+}
+
+nav a {
+    padding: 1rem;
+}
+
+nav a:hover {
+    text-decoration: #162b53 underline;
+}
+
+.selected {
+    color: #f5f5f5;
+    background-color: #162b53;
+}
+
+#table_id_length {
+    margin: 1rem 0;
+    float: left;
+    font-size: 0.9rem;
+}
+
+#table_id_filter {
+    margin: 1rem 0;
+    float: right;
+    font-size: 0.9rem;
+}
+
+#table_id_info {
+    margin: 1rem 0;
+    float: left;
+    font-weight: lighter;
+    font-size: 0.9rem;
+}
+
+#table_id_paginate {
+    margin: 1rem 0;
+    float: right;
+    font-size: 0.9rem;
+}
+
+#table_id_paginate a {
+    padding: 0 0.5rem;
+}
+
+.current {
+    font-weight: bold;
+}
+
+/*The BACKGROUND IMG was taken from <https://wallpaperaccess.com/nasa-earth-at-night/>*/
+
+
